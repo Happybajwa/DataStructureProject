@@ -11,10 +11,10 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="23"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Menu Grid.Row="0" FontSize="18" Background="CornflowerBlue">
+        <Menu Grid.Row="0" FontSize="18" Height="30" Background="CornflowerBlue">
             <MenuItem Header="Add New Book" Name="addNewBookMenuItem" Margin="0 0 1 0" Click="addNewBookMenuItem_Click"
                       Foreground="White" Background="CornflowerBlue" BorderThickness="1" BorderBrush="White" />
             <MenuItem Header="Show All Books" Name="showAllBooksMenuItem" Margin="0 0 1 0" 

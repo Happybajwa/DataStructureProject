@@ -24,7 +24,8 @@ namespace DataStructureProject.View
         public AddNewBookUC()
         {
             InitializeComponent();
-            yearComboBox.ItemsSource = Enumerable.Range(1991, DateTime.UtcNow.Year - 1991).Reverse().ToList();
+            yearComboBox.ItemsSource = Enumerable.Range(1991, DateTime.UtcNow.Year - 1991).Reverse().ToList();            
+            conditionLabel.Content = ProcessBooksData.AddingBookNewConditionString();
         }
 
         private void updateButton_Click(object sender, RoutedEventArgs e)

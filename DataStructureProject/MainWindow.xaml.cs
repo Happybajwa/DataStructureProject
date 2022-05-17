@@ -24,10 +24,14 @@ namespace DataStructureProject
         public MainWindow()
         {
             InitializeComponent();
+            ReadDataFile.readBook();
+            
         }
 
         private void showAllBooksMenuItem_Click(object sender, RoutedEventArgs e)
         {
+            //Using User control object and adding it into stackpanel
+            //in main window
             showAllBooksUC showAllBooksUC = new();
             mainPanel.Children.Clear();
             mainPanel.Children.Add(showAllBooksUC);
@@ -35,6 +39,8 @@ namespace DataStructureProject
 
         private void softwareDevelopmentMenuItem_Click(object sender, RoutedEventArgs e)
         {
+            //Using User control object and adding it into stackpanel
+            //in main window
             softwareDevBooksUC showSoftwareDevBooksUC = new softwareDevBooksUC();
             mainPanel.Children.Clear();
             mainPanel.Children.Add((showSoftwareDevBooksUC));
@@ -42,6 +48,8 @@ namespace DataStructureProject
 
         private void computerScienceMenuItem_Click(object sender, RoutedEventArgs e)
         {
+            //Using User control object and adding it into stackpanel
+            //in main window
             ComputerScienceBooksUC showComputerScienceBooksUC = new ComputerScienceBooksUC();
             mainPanel.Children.Clear();
             mainPanel.Children.Add(showComputerScienceBooksUC);
@@ -49,6 +57,8 @@ namespace DataStructureProject
 
         private void mathmeticsMenuItem_Click(object sender, RoutedEventArgs e)
         {
+            //Using User control object and adding it into stackpanel
+            //in main window
             MathematicsBooksUC showMathematicsUC = new MathematicsBooksUC();
             mainPanel.Children.Clear();
             mainPanel.Children.Add(showMathematicsUC);
@@ -56,6 +66,8 @@ namespace DataStructureProject
 
         private void networkingMenuItem_Click(object sender, RoutedEventArgs e)
         {
+            //Using User control object and adding it into stackpanel
+            //in main window
             NetworkingBooksUC networkingBooksUC = new NetworkingBooksUC();
             mainPanel.Children.Clear();
             mainPanel.Children.Add(networkingBooksUC);
@@ -68,6 +80,8 @@ namespace DataStructureProject
 
         private void addNewBookMenuItem_Click(object sender, RoutedEventArgs e)
         {
+            //Using User control object and adding it into stackpanel
+            //in main window
             AddNewBookUC addNewBookUC = new AddNewBookUC();
             mainPanel.Children.Clear();
             mainPanel.Children.Add(addNewBookUC);

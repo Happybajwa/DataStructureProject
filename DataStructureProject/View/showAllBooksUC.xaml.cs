@@ -22,15 +22,16 @@ namespace DataStructureProject.View
     {
         public showAllBooksUC()
         {
-            InitializeComponent();        
+            InitializeComponent();
         }
 
         private void showAllBooksButton_Click(object sender, RoutedEventArgs e)
         {
-            bookDataGrid.Items.Clear();
-            var books = ReadDataFile.readBook();
+            bookDataGrid.ItemsSource = null;
+            var books = BookDataStructure.books;
             if (books.Count == 0)
             {
+                //Checking that book list is not empty iof its empty will show error message to user
                 MessageBox.Show("No Books To Show.");
             }
             else

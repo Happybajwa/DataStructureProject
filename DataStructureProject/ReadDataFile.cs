@@ -10,7 +10,7 @@ namespace DataStructureProject
 {
     internal class ReadDataFile
     {
-        public static Queue<Book> readBook()
+        public static void readBook()
         {
             StreamReader reader = new StreamReader("Data.txt");
             string lines = "";
@@ -24,7 +24,6 @@ namespace DataStructureProject
                 book.Publisher = words[3];
                 book.ReleasedYear = int.Parse(words[4]);
                 book.Category = words[5];
-
                 /* 
                  * Checking that all conditions and policies are met when adding a book in queue
                  * The library management has decided to keep the books that have been published after 1990 and belong to 
@@ -42,7 +41,6 @@ namespace DataStructureProject
                     BookDataStructure.books.Enqueue(book);
                 }
             }
-            return BookDataStructure.books;
         }
     }
 }

@@ -97,5 +97,12 @@ namespace DataStructureProject
                 File.WriteAllLines(filepath, lines);
             }
         }
+        public static string AddingBookNewConditionString()
+        {
+            string condition = "Note: The library management has decided to keep the books\n that have been published" +
+                " after 1990 and belong to one of the\n following categories:\n1.Computer Science\n2.Networking" +
+                "\n3.Mathematics\n4.Software Development";
+            return condition;
+        }
     }
 }

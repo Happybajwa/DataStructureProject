@@ -28,7 +28,7 @@
             <TextBox Margin="10 13" x:Name="bookNameTextBox" FontSize="16"/>
             <TextBox Margin="10 13" x:Name="publisherTextBox" FontSize="16"/>
             <ComboBox x:Name="yearComboBox" Margin="10 13" FontSize="16"/>
-            <ComboBox x:Name="categoryComboBox" Margin="10 13">
+            <ComboBox x:Name="categoryComboBox" Margin="10 13" FontSize="16">
                 <ComboBoxItem IsSelected="True" Content="Computer Science"/>
                 <ComboBoxItem Content="Software Development"/>
                 <ComboBoxItem Content="Mathematics"/>
@@ -38,6 +38,7 @@
              Foreground="white" Background="CornflowerBlue" BorderThickness="0"
              FontSize="16"  Margin="10 10" Click="updateButton_Click">
             </Button>
+            <Label Margin="10 10" Foreground="Red" x:Name="conditionLabel"/>
         </StackPanel>
     </Grid>
 </UserControl>
