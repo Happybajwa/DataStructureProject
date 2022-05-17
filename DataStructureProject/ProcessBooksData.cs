@@ -10,6 +10,11 @@ namespace DataStructureProject
 {
     internal class ProcessBooksData
     {
+        //returning a stack of computer science books from BookDataStructure class
+        //or we can say our main list where we adding books from text file
+        //by checking the book category and if category is
+        //computer science so we will add that book in newly defined stack of books
+        //in the function and return it on request
         public static Stack<Book> ComputerScienceBooks()
         {
             Stack<Book> computerScienceBooks = new();
@@ -23,6 +28,12 @@ namespace DataStructureProject
             }
             return computerScienceBooks;
         }
+
+        //returning a stack of Networking books from Queue of books from BookDataStructure class
+        //or we can say our main list where we adding books from text file
+        //by checking the book category and if category is
+        //networking so we will add that book in newly defined stack of books
+        //in the function and return it on request
         public static Stack<Book> NetworkingBooks()
         {
             Stack<Book> networkingBooks = new();
@@ -36,6 +47,12 @@ namespace DataStructureProject
             }
             return networkingBooks;
         }
+
+        //returning a stack of Mathematics books from Queue of books from BookDataStructure class
+        //or we can say our main list where we adding books from text file
+        //by checking the book category and if category is
+        //Mathematics so we will add that book in newly defined stack of books
+        //in the function and return it on request
         public static Stack<Book> MathematicsBooks()
         {
             Stack<Book> mathematicBooks = new();
@@ -49,6 +66,12 @@ namespace DataStructureProject
             }
             return mathematicBooks;
         }
+
+        //returning a stack of Software Development books from Queue of books from BookDataStructure class
+        //or we can say our main list where we adding books from text file
+        //by checking the book category and if category is
+        //Software Development so we will add that book in newly defined stack of books
+        //in the function and return it on request
         public static Stack<Book> SoftwareDevelopmentBooks()
         {
             Stack<Book> softwareDevelopmentBooks = new();
@@ -66,7 +89,7 @@ namespace DataStructureProject
         public static bool inputvalidation(TextBox[] textboxes)
         {
             /*
-             * Checking that none of the textbox is empty
+             * Checking that none of the textbox is empty or null
              */
             bool isEmpty = false;
             foreach (var textbox in textboxes)
@@ -83,6 +106,9 @@ namespace DataStructureProject
             return isEmpty;
         }
 
+        //Adding new book in the text file
+        //before adding new book in the system we are checking that
+        //book passed in parameter is not null
         public static void SaveNewBook(string book)
         {
             if(string.IsNullOrEmpty(book))
@@ -97,6 +123,9 @@ namespace DataStructureProject
                 File.WriteAllLines(filepath, lines);
             }
         }
+
+        //returning the string for the warning label 
+        //for addnewbook form.
         public static string AddingBookNewConditionString()
         {
             string condition = "Note: The library management has decided to keep the books\n that have been published" +
